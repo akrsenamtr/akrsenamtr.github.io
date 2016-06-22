@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profile</title>
+    <title>Profile Edit</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -10,7 +10,44 @@
 </head>
 <body>
 
-<p align="center">guest</p><button><a href="akrsenamtr.github.io/ProfileEdit.html"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> プロフィール変更</a></button>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label>名前</label>
+            <div class="row">
+                <div class="col-xs-4">
+                    <input type="text" name="email" class="form-control">
+                </div>
+            </div>
+        </div>
+        <input id="lefile" type="file" style="display:none">
+        <div class="input-group">
+            <input type="text" id="photoCover" class="form-control" placeholder="select file...">
+            <span class="input-group-btn"><button type="button" class="btn btn-info" onclick="$('input&#91;id=lefile&#93;').click();"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span></button></span>
+        </div>
+        <p class="help-block">●画像をアップロードできます。</p>
+
+        <script>
+            $('input[id=lefile]').change(function() {
+                $('#photoCover').val($(this).val());
+            });
+        </script>
+        <div class="form-group">
+            <label>コメント</label>
+            <div class="row">
+                <div class="col-xs-8">
+                    <input type="text" name="email" class="form-control" size="50">
+                </div>
+            </div>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">保存する
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Enter</button>
+    </form>
+</div>
 
 
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
@@ -28,14 +65,14 @@
             </button>
             <a class="navbar-brand" href="#">Coordinating</a>
         </div>
-        <div class="collapse navbar-collapse"id="collapse-id">
+        <div class="collapse navbar-collapse" id="collapse-id">
             <ul class="nav navbar-nav">
                 <li><a href="top.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> top</a></li>
                 <li><a href="Timeline.html"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Timeline</a></li>
-                <li class="active"><a href="Notifications.html"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span> Notifications</a></li>
+                <li><a href="Notifications.html"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span> Notifications</a></li>
                 <li><a href="Favorites.html"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Favorites</a></li>
                 <li><a href="Messages.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Messages</a></li>
-                <li><a href="Profile.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profile</a></li>
+                <li class="active"><a href="Profile.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profile</a></li>
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
@@ -44,7 +81,6 @@
                 <button type="submit" class="btn btn-default">検索</button>
             </form>
         </div>
-
     </div>
 </nav>
 
