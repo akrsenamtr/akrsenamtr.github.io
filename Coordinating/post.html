@@ -2,21 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profile</title>
+    <title>Messages</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class align="center"><img src="images/prof-icon.jpg" class="img-circle" width="75" height="75"></div>　
-<p align="center">赤池竜乃助</p>
-<div class="text-center">
 
-<p>フォロー<strong>0</strong>人　フォロワー<strong>0</strong>人</p>
-    <a href="ProfileEdit.html" style="color: #ffffff"><button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> プロフィール変更</a></button>
-    <a href="post.html" style="color: #ffffff"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> 投稿</a></button>
+<div class="container">
+    <div class="row">
+        <hr>
+            <center>
+                <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle-lg btn-primary"><font size="5">投稿</font></a>
+                <a href="#aboutModal" data-toggle="modal" data-target="#myModal" class="btn btn-circle-lg btn-danger"><font size="5">出品</font></a>
+            </center>
+        </div>
+    </div>
 </div>
+<div class="container">
+    <div class="row">
+    </div>
+</div>
+
+
 
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 
@@ -33,7 +43,7 @@
             </button>
             <a class="navbar-brand" href="#">Coordinating</a>
         </div>
-        <div class="collapse navbar-collapse"id="collapse-id">
+        <div class="collapse navbar-collapse" id="collapse-id">
             <ul class="nav navbar-nav">
                 <li><a href="top.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> top</a></li>
                 <li><a href="Timeline.html"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Timeline</a></li>
@@ -41,6 +51,7 @@
                 <li><a href="Favorites.html"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Favorites</a></li>
                 <li><a href="Messages.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Messages</a></li>
                 <li class="active"><a href="Profile.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profile</a></li>
+
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
